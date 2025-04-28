@@ -3,7 +3,7 @@ import { useState } from "react";
 import { auth } from "../firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { FirebaseError } from "firebase/app";
-import { Form, Input, Switcher, Title, Wrapper, Error } from "../components/auth-components";
+import { Form, Input, Switcher, Title, Wrapper, Error, RedBold } from "../components/auth-components";
 import GithubButton from "../components/github-btn";
 
 export default function CreateAccount() {
@@ -47,7 +47,7 @@ export default function CreateAccount() {
     };
     return (
         <Wrapper>
-            <Title>Join 𝕏</Title>
+            <Title>Join <RedBold>L</RedBold>-ogiAgent</Title>
             <Form onSubmit={onSubmit}>
                 <Input
                     onChange={onChange}

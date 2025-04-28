@@ -11,7 +11,14 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: 42px;
+  font-weight: bold;
 `;
+
+export const RedBold = styled(Title)`
+  color: #ed1b24;
+  display: inline;
+`;
+
 
 export const Form = styled.form`
   margin-top: 50px;
