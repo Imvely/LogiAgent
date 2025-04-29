@@ -69,7 +69,14 @@ export default function PostReviewForm() {
     const onFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { files } = e.target;
         if (files && files.length === 1) {
-            setFile(files[0]);
+            const selectedFile = files[0];
+            const maxSizeInBytes = 1024 * 1024 * 3; // 3MB
+
+            if (selectedFile.size > maxSizeInBytes) {
+                alert("File size must be less than 3MB.");
+                return;
+            }
+            setFile(selectedFile)
         }
     };
     const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
