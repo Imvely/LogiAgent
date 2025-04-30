@@ -1,6 +1,7 @@
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { auth } from "../firebase";
+import { RedBold, Title } from "./auth-components";
 
 const Wrapper = styled.div`
     display:grid;
@@ -52,6 +53,7 @@ export default function Layout() {
     return (
         <Wrapper>
             <Menu>
+                <Title><RedBold>L</RedBold>-ogiAgent</Title>
                 <Link to="/">
                     <MunuItem>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="size-5">

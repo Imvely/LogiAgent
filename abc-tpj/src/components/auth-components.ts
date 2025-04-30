@@ -10,8 +10,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Title = styled.h1`
-  font-size: 42px;
+  font-size: 30px;
   font-weight: bold;
+  margin-bottom: 20px;
 `;
 
 export const RedBold = styled(Title)`
